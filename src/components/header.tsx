@@ -19,23 +19,22 @@ const HeaderControl = styled.div`
   display: flex;
   height: 2rem;
   justify-content: center;
-  
   & > * {
     margin-left: 0.5rem;
 `
 
 interface Props {
-    title: string
-    children: React.ReactNode
+  title: string
+  children: React.ReactNode
 }
 
 export const Header: React.FC<Props> = (props) => (
-    <HeaderWrapper>
-        <HeaderTitle>
-            {props.title}
-        </HeaderTitle>
-        <HeaderControl>
-            {props.children}
-        </HeaderControl>
-    </HeaderWrapper>
+  <HeaderWrapper>
+    <HeaderTitle>
+      {props.title}
+    </HeaderTitle>
+    <HeaderControl>
+      {props.children}
+    </HeaderControl>
+  </HeaderWrapper>
 )
